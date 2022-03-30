@@ -10,6 +10,11 @@ console.log(`meu nome é ${nome} ${sobrenome}`);
 nomeSobrenome = nome + sobrenome;
 console.log(nomeSobrenome);
 
+let idade ;
+idade = 25;
+idade = idade+1;
+console.log(idade);
+
 
 // Const e let
 // Case Sensitive
