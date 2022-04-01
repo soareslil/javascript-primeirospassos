@@ -9,26 +9,19 @@ const listasDeDestinos = new Array(
 const idadeComprador = 18;
 const estaAcompanhado = false;
 let temPassagemComprada = false; 
+const destino = "Rio de Janeiro";
 
 console.log('\n destinos possiveis:');
 console.log(listasDeDestinos);
 
+const podeComprar = idadeComprador >= 18 || estaAcompanhada == true;
 
-if (idadeComprador >= 18 || estaAcompanhada == true) {
-    console.log("Boa Viagem!!");
-    listaDeDestinos.splice(2, 1); //removendo item
-    temPassagemComprada = true;
-} else {
-    console.log("Não é maior de Idade e não posso vender");
-    temPassagemComprada = false;
+let contador = 0;
+while(contador<3){
+  if(listasDeDestinos[contador] == destino){
+      console.log('destino existe');
+  }else{
+      console.log('destino não existe');
+  }
+    // contador +=1;
 }
-
-console.log("Embarque: \n\n")
-if(idadeComprador >= 18 && temPassagemComprada){
-    console.log("Boa viagem");
-}else{
-    console.log("Você não pode embarcar");
-}
-
-
-console.log(listaDeDestinos);
