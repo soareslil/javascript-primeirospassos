@@ -9,7 +9,7 @@ const listasDeDestinos = new Array(
 const idadeComprador = 18;
 const estaAcompanhado = false;
 let temPassagemComprada = false; 
-const destino = "Rio de Janeiro";
+const destino = "França";
 
 console.log('\n destinos possiveis:');
 console.log(listasDeDestinos);
@@ -25,4 +25,12 @@ while(contador<3){
      break;
   }
     contador +=1;
+}
+
+console.log('destino existe:' , destinoExiste);
+
+if(podeComprar && destinoExiste){
+    console.log('boa viagem pra voce!');
+}else{
+    console.log('desculpe tivemos um erro');
 }
